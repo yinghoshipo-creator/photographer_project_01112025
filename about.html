@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Your Name Photography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; letter-spacing: 0.05em; line-height: 1.8; }
+        .about-image { filter: grayscale(20%); transition: 0.5s; }
+        .about-image:hover { filter: grayscale(0%); }
+    </style>
+</head>
+<body class="bg-white text-black">
+
+    <nav class="flex justify-between items-center px-8 py-12">
+        <div class="text-xl font-bold tracking-widest uppercase">
+            <a href="index.html">Your Name</a>
+        </div>
+        <ul class="flex space-x-8 text-sm uppercase tracking-wider">
+            <li><a href="portfolio.html" class="hover:line-through">Portfolio</a></li>
+            <li><a href="about.html" class="line-through">About</a></li>
+            <li><a href="contact.html" class="hover:line-through">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="px-8 pb-24 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+            
+            <div class="md:col-span-5">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000" 
+                         alt="Photographer Portrait" 
+                         class="w-full h-auto about-image">
+                </div>
+            </div>
+
+            <div class="md:col-span-7 md:pl-12">
+                <section class="mb-12">
+                    <h2 class="text-3xl font-light mb-6">Capturing the unseen moments within the frame.</h2>
+                    <p class="text-gray-600 mb-4">
+                        我是 [你的名字]，一名駐紮於 [城市名] 的攝影師，專注於 [時尚編導 / 紀實人像 / 商業空間]。
+                    </p>
+                    <p class="text-gray-600">
+                        我認為攝影不只是紀錄影像，而是一種觀察世界的語法。透過光線的刻劃與空間的留白，我試圖在商業與藝術之間尋找平衡，為每一個瞬間注入獨特的敘事感。
+                    </p>
+                </section>
+
+                <section class="grid grid-cols-2 gap-8 pt-12 border-t border-gray-100">
+                    <div>
+                        <h3 class="text-xs uppercase tracking-widest font-bold mb-4">Services</h3>
+                        <ul class="text-sm text-gray-500 space-y-2">
+                            <li>Editorial Photography</li>
+                            <li>Commercial Campaigns</li>
+                            <li>Portrait Sessions</li>
+                            <li>Art Direction</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xs uppercase tracking-widest font-bold mb-4">Clients / Recognition</h3>
+                        <ul class="text-sm text-gray-500 space-y-2">
+                            <li>Vogue Taiwan</li>
+                            <li>X Magazine</li>
+                            <li>Local Design Studio</li>
+                            <li>Independent Brands</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="px-8 py-12 border-t border-gray-100 text-xs text-gray-400 flex justify-between">
+        <p>© 2026 Your Name Photography</p>
+        <div class="space-x-4">
+            <a href="#" class="hover:text-black">Instagram</a>
+            <a href="#" class="hover:text-black">Facebook</a>
+        </div>
+    </footer>
+
+</body>
+</html>

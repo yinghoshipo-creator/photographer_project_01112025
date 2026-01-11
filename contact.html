@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Your Name Photography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; letter-spacing: 0.05em; }
+        input, textarea { border-bottom: 1px solid #e5e7eb !important; border-top: 0; border-left: 0; border-right: 0; border-radius: 0 !important; }
+        input:focus, textarea:focus { outline: none; border-color: #000 !important; ring: 0; }
+    </style>
+</head>
+<body class="bg-white text-black">
+
+    <nav class="flex justify-between items-center px-8 py-12">
+        <div class="text-xl font-bold tracking-widest uppercase">
+            <a href="index.html">Your Name</a>
+        </div>
+        <ul class="flex space-x-8 text-sm uppercase tracking-wider">
+            <li><a href="portfolio.html" class="hover:line-through">Portfolio</a></li>
+            <li><a href="about.html" class="hover:line-through">About</a></li>
+            <li><a href="contact.html" class="line-through">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="px-8 pb-24 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+            
+            <div>
+                <h2 class="text-4xl font-light mb-12">Get in touch.</h2>
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-xs uppercase tracking-widest font-bold text-gray-400 mb-2">Email</h3>
+                        <p class="text-lg">hello@yourname.com</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xs uppercase tracking-widest font-bold text-gray-400 mb-2">Social</h3>
+                        <div class="flex space-x-4 text-lg">
+                            <a href="#" class="hover:line-through">Instagram</a>
+                            <a href="#" class="hover:line-through">Facebook</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xs uppercase tracking-widest font-bold text-gray-400 mb-2">Location</h3>
+                        <p class="text-lg">Taipei, Taiwan (Available Worldwide)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+               <form action="https://formspree.io/f/maqqwgzw" method="POST" class="space-y-10">
+                 <div>
+                    <label class="text-xs uppercase tracking-widest font-bold">Name</label>
+                    <input type="text" name="name" required class="w-full py-2 bg-transparent focus:border-black transition-colors" placeholder="Your full name">
+                </div>
+                <div>
+                    <label class="text-xs uppercase tracking-widest font-bold">Email</label>
+                    <input type="email" name="_replyto" required class="w-full py-2 bg-transparent focus:border-black transition-colors" placeholder="email@address.com">
+                </div>
+                 <div>
+                    <label class="text-xs uppercase tracking-widest font-bold">Subject</label>
+                    <input type="text" name="subject" class="w-full py-2 bg-transparent focus:border-black transition-colors" placeholder="Wedding / Editorial / Personal">
+                </div>
+                 <div>
+                    <label class="text-xs uppercase tracking-widest font-bold">Message</label>
+                    <textarea name="message" rows="4" required class="w-full py-2 bg-transparent focus:border-black transition-colors resize-none" placeholder="Tell me about your project"></textarea>
+                </div>
+    
+                    <button type="submit" class="bg-black text-white px-10 py-4 text-xs uppercase tracking-widest hover:bg-gray-800 transition-colors">
+        Send Message
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="px-8 py-12 border-t border-gray-100 text-xs text-gray-400 flex justify-between">
+        <p>© 2026 Your Name Photography</p>
+    </footer>
+
+</body>
+</html>
