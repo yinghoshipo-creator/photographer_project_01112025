@@ -13,16 +13,51 @@
 </head>
 <body class="bg-white text-black">
 
-    <nav class="flex justify-between items-center px-8 py-12">
+    <nav class="bg-white border-b border-gray-50 px-6 py-6 md:py-12 relative z-50">
+    <div class="flex justify-between items-center max-w-7xl mx-auto">
         <div class="text-xl font-bold tracking-widest uppercase">
             <a href="index.html">Your Name</a>
         </div>
-        <ul class="flex space-x-8 text-sm uppercase tracking-wider">
+
+        <button id="menu-btn" class="block md:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <ul class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
             <li><a href="portfolio.html" class="hover:line-through">Portfolio</a></li>
-            <li><a href="about.html" class="line-through">About</a></li>
+            <li><a href="about.html" class="hover:line-through">About</a></li>
             <li><a href="contact.html" class="hover:line-through">Contact</a></li>
         </ul>
-    </nav>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 px-6 py-6">
+        <ul class="flex flex-col space-y-6 text-sm uppercase tracking-wider">
+            <li><a href="portfolio.html" class="block">Portfolio</a></li>
+            <li><a href="about.html" class="block">About</a></li>
+            <li><a href="contact.html" class="block">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const icon = document.getElementById('menu-icon');
+
+    btn.addEventListener('click', () => {
+        // 切換選單顯示/隱藏
+        menu.classList.toggle('hidden');
+        
+        // 切換圖示 (三條線變叉叉)
+        if (menu.classList.contains('hidden')) {
+            icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        } else {
+            icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+        }
+    });
+</script>
 
     <main class="px-8 pb-24 max-w-7xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
