@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name Photography | 攝影作品集</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; letter-spacing: 0.05em; }
+        .photo-hover:hover { opacity: 0.8; transition: 0.3s; }
+    </style>
+</head>
+<body class="bg-white text-black">
+
+    <nav class="flex justify-between items-center px-8 py-12">
+        <div class="text-xl font-bold tracking-widest uppercase">
+            <a href="index.html">Your Name</a>
+        </div>
+        <ul class="flex space-x-8 text-sm uppercase tracking-wider">
+            <li><a href="portfolio.html" class="hover:line-through">Portfolio</a></li>
+            <li><a href="about.html" class="hover:line-through">About</a></li>
+            <li><a href="contact.html" class="hover:line-through">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="px-8 mb-24">
+        <div class="w-full h-[80vh] bg-gray-100 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?auto=format&fit=crop&q=80&w=2000" 
+                 alt="Featured Image" 
+                 class="w-full h-full object-cover">
+        </div>
+        <div class="mt-8">
+            <h1 class="text-2xl font-light italic">Selected Works, 2024</h1>
+        </div>
+    </main>
+
+    <section class="px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-24">
+        <div class="aspect-[3/4] bg-gray-100 overflow-hidden photo-hover">
+            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover">
+        </div>
+        <div class="aspect-[3/4] bg-gray-100 overflow-hidden photo-hover">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover">
+        </div>
+        <div class="aspect-[3/4] bg-gray-100 overflow-hidden photo-hover">
+            <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover">
+        </div>
+    </section>
+
+    <footer class="px-8 py-12 border-t border-gray-100 text-xs text-gray-400 flex justify-between">
+        <p>© 2024 Your Name Photography</p>
+        <p>Instagram / Behance</p>
+    </footer>
+
+</body>
+</html>
